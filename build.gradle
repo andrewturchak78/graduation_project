@@ -19,7 +19,7 @@ dependencies {
     implementation 'org.projectlombok:lombok:1.18.26'
     testImplementation 'org.projectlombok:lombok:1.18.26'
     testImplementation 'org.junit.jupiter:junit-jupiter:5.9.2'
-    testImplementation 'mysql:mysql-connector-java:8.0.32'
+    testImplementation 'org.postgresql:postgresql:42.2.12'
     testImplementation 'com.github.javafaker:javafaker:1.0.2'
     testImplementation 'commons-dbutils:commons-dbutils:1.7'
     testImplementation 'com.codeborne:selenide:6.12.3'

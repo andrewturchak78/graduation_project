@@ -15,7 +15,7 @@ public class SQLHelper {
     private SQLHelper(){
     }
     private static Connection getConn() throws SQLException {
-        return DriverManager.getConnection("jdbc:mysql://localhost:3306/app", "app", "pass");
+        return DriverManager.getConnection("jdbc:postgresql://localhost:5432/app", "app", "pass");
     }
     public static Status getStatusFromPayment() {
         var codeSQL = "SELECT status FROM payment_entity ORDER BY created DESC LIMIT 1";
