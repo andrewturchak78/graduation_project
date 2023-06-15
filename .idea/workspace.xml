@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c2eec95-6106-448c-affa-0c6806001525" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/docker-compose.postgre.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/data/DataHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/data/SQLHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/page/PaymentPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/test/PaymentServiceTest.java" afterDir="false" />
+    <list default="true" id="8c2eec95-6106-448c-affa-0c6806001525" name="Changes" comment="postgresql tested">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/data/SQLHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/data/SQLHelper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

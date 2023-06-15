@@ -11,11 +11,14 @@ import java.sql.SQLException;
 
 public class SQLHelper {
     private static QueryRunner runner = new QueryRunner();
+    private static String dbUrl = System.getProperty("db.url");
+    private static String dbUser = System.getProperty("db.user");
+    private static String dbPass = System.getProperty("db.pass");
 
     private SQLHelper(){
     }
     private static Connection getConn() throws SQLException {
-        return DriverManager.getConnection("jdbc:mysql://localhost:3306/app", "app", "pass");
+        return DriverManager.getConnection(dbUrl, dbUser, dbPass);
     }
     public static Status getStatusFromPayment() {
         var codeSQL = "SELECT status FROM payment_entity ORDER BY created DESC LIMIT 1";
