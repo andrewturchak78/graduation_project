@@ -113,4 +113,18 @@ public class PaymentPage {
         cvcInput.setValue(dataHelper.invalidTooLongCVC());
         cvcInput.equals("567");
     }
+    public void tryingZeroMonth(DataHelper dataHelper, DataHelper.CardInfo cardInfo){
+        cardNumberInput.setValue(cardInfo.getCardNumber());
+        monthInput.setValue(dataHelper.zeroMonth());
+        yearInput.setValue(dataHelper.generateValidYear(2));
+        ownerInput.setValue(dataHelper.getRandomValidUser());
+        cvcInput.setValue(dataHelper.generateRandomCVC());
+    }
+    public void tryingZeroCVC(DataHelper dataHelper, DataHelper.CardInfo cardInfo){
+        cardNumberInput.setValue(cardInfo.getCardNumber());
+        monthInput.setValue(dataHelper.zeroMonth());
+        yearInput.setValue(dataHelper.generateValidYear(2));
+        ownerInput.setValue(dataHelper.getRandomValidUser());
+        cvcInput.setValue(dataHelper.zeroCVC());
+    }
 }

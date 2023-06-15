@@ -227,4 +227,22 @@ public class PaymentServiceTest {
         page.checkErrorSubOwnerNotification();
         page.checkErrorSubYearAndMonthNotification();
     }
+    @Test
+    void testingZeroMonth(){
+        PaymentPage page = new PaymentPage();
+        var firstCardInfo = getFirstCardNumber();
+        page.clickOnBuyButton();
+        page.tryingZeroMonth(dataHelper, firstCardInfo);
+        page.clickOnContinueButton();
+        page.checkErrorSubYearAndMonthNotification();
+    }
+    @Test
+    void testingZeroCVC(){
+        PaymentPage page = new PaymentPage();
+        var firstCardInfo = getFirstCardNumber();
+        page.clickOnBuyButton();
+        page.tryingZeroCVC(dataHelper, firstCardInfo);
+        page.clickOnContinueButton();
+        page.checkErrorSubCVCNotification();
+    }
 }

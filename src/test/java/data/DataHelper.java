@@ -90,4 +90,12 @@ public class DataHelper {
         String tooLongCVC = "5678";
         return tooLongCVC;
     }
+    public static String zeroMonth(){
+        String zeroMonth = "00";
+        return zeroMonth;
+    }
+    public static String zeroCVC(){
+        String zeroCVC = "000";
+        return zeroCVC;
+    }
 }
