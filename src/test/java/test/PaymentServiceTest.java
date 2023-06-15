@@ -228,7 +228,7 @@ public class PaymentServiceTest {
         page.checkErrorSubYearAndMonthNotification();
     }
     @Test
-    void testingZeroMonth(){
+    void testingZeroMonthInPayment(){
         PaymentPage page = new PaymentPage();
         var firstCardInfo = getFirstCardNumber();
         page.clickOnBuyButton();
@@ -237,10 +237,28 @@ public class PaymentServiceTest {
         page.checkErrorSubYearAndMonthNotification();
     }
     @Test
-    void testingZeroCVC(){
+    void testingZeroCVCInPayment(){
         PaymentPage page = new PaymentPage();
         var firstCardInfo = getFirstCardNumber();
         page.clickOnBuyButton();
+        page.tryingZeroCVC(dataHelper, firstCardInfo);
+        page.clickOnContinueButton();
+        page.checkErrorSubCVCNotification();
+    }
+    @Test
+    void testingZeroMonthInCredit(){
+        PaymentPage page = new PaymentPage();
+        var firstCardInfo = getFirstCardNumber();
+        page.clickOnBuyInCreditButton();
+        page.tryingZeroMonth(dataHelper, firstCardInfo);
+        page.clickOnContinueButton();
+        page.checkErrorSubYearAndMonthNotification();
+    }
+    @Test
+    void testingZeroCVCInCredit(){
+        PaymentPage page = new PaymentPage();
+        var firstCardInfo = getFirstCardNumber();
+        page.clickOnBuyInCreditButton();
         page.tryingZeroCVC(dataHelper, firstCardInfo);
         page.clickOnContinueButton();
         page.checkErrorSubCVCNotification();
