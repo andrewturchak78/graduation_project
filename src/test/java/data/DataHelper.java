@@ -18,7 +18,6 @@ public class DataHelper {
     }
 
 
-
     @Value
     public static class CardInfo {
         private String cardNumber;
@@ -32,6 +31,7 @@ public class DataHelper {
     public static CardInfo getSecondCardNumber() {
         return new CardInfo("4444 4444 4444 4442");
     }
+
     public static CardInfo randomInvalidCardNumber() {
         return new CardInfo(faker.business().creditCardNumber());
     }
@@ -66,35 +66,43 @@ public class DataHelper {
         String cvc = String.valueOf(value);
         return cvc;
     }
-    public static String wrongCardNumber(){
+
+    public static String wrongCardNumber() {
         String trashCardNumber = ";помтва№!*";
         return trashCardNumber;
     }
-    public static String wrongMonth(){
+
+    public static String wrongMonth() {
         String trashMonth = "dfыл";
         return trashMonth;
     }
-    public static String wrongYear(){
+
+    public static String wrongYear() {
         String trashYear = "yuшд";
         return trashYear;
     }
-    public static String wrongUser(){
+
+    public static String wrongUser() {
         String trashUser = "34прое89*";
         return trashUser;
     }
-    public static String wrongCVC(){
+
+    public static String wrongCVC() {
         String trashCVC = "GП*";
         return trashCVC;
     }
-    public static String invalidTooLongCVC(){
+
+    public static String invalidTooLongCVC() {
         String tooLongCVC = "5678";
         return tooLongCVC;
     }
-    public static String zeroMonth(){
+
+    public static String zeroMonth() {
         String zeroMonth = "00";
         return zeroMonth;
     }
-    public static String zeroCVC(){
+
+    public static String zeroCVC() {
         String zeroCVC = "000";
         return zeroCVC;
     }

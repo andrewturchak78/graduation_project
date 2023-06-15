@@ -15,11 +15,13 @@ public class SQLHelper {
     private static String dbUser = System.getProperty("db.user");
     private static String dbPass = System.getProperty("db.pass");
 
-    private SQLHelper(){
+    private SQLHelper() {
     }
+
     private static Connection getConn() throws SQLException {
         return DriverManager.getConnection(dbUrl, dbUser, dbPass);
     }
+
     public static Status getStatusFromPayment() {
         var codeSQL = "SELECT status FROM payment_entity ORDER BY created DESC LIMIT 1";
         try (var conn = getConn()) {
@@ -30,6 +32,7 @@ public class SQLHelper {
         }
         return null;
     }
+
     public static Status getStatusFromCredit() {
         var codeSQL = "SELECT status FROM credit_request_entity ORDER BY created DESC LIMIT 1";
         try (var conn = getConn()) {
@@ -40,14 +43,15 @@ public class SQLHelper {
         }
         return null;
     }
+
     @Value
     public static class Status {
         String status;
     }
 
     @SneakyThrows
-   public static void cleanDatabase() {
-       var connection = getConn();
+    public static void cleanDatabase() {
+        var connection = getConn();
         runner.execute(connection, "DELETE FROM credit_request_entity");
         runner.execute(connection, "DELETE FROM order_entity");
         runner.execute(connection, "DELETE FROM payment_entity");
