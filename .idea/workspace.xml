@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c2eec95-6106-448c-affa-0c6806001525" name="Changes" comment="postgresql tested">
+    <list default="true" id="8c2eec95-6106-448c-affa-0c6806001525" name="Changes" comment="postgre tests added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/data/DataHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/data/DataHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/page/PaymentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/PaymentPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/test/PaymentServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/PaymentServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +53,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.PaymentServiceTest.testingZeroCVC">
+  <component name="RunManager" selected="Gradle.PaymentServiceTest">
     <configuration name="PaymentServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -173,9 +171,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.PaymentServiceTest" />
         <item itemvalue="Gradle.PaymentServiceTest.testingZeroCVC" />
         <item itemvalue="Gradle.PaymentServiceTest.testingZeroMonth" />
-        <item itemvalue="Gradle.PaymentServiceTest" />
         <item itemvalue="Gradle.PaymentServiceTest.paymentTransferByWrongCardInPayment" />
         <item itemvalue="Gradle.PaymentServiceTest.invalidCreditTransfer" />
       </list>
