@@ -45,3 +45,7 @@ out/
 !**/src/test/**
 
 .idea
+gradle.xml
+misc.xml
+vcs.xml
+workspace.xml
